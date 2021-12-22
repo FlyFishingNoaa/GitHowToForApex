@@ -28,15 +28,15 @@ prompt APPLICATION 129940 - GitHowToForApex
 -- Application Export:
 --   Application:     129940
 --   Name:            GitHowToForApex
---   Date and Time:   13:09 Wednesday December 22, 2021
+--   Date and Time:   14:15 Wednesday December 22, 2021
 --   Exported By:     JSQCONTRACTTOHIRE@YAHOO.COM
 --   Flashback:       0
 --   Export Type:     Application Export
 --     Pages:                     24
---       Items:                   39
+--       Items:                   40
 --       Validations:              2
 --       Processes:               21
---       Regions:                 58
+--       Regions:                 59
 --       Buttons:                 36
 --       Dynamic Actions:         15
 --     Shared Components:
@@ -118,7 +118,7 @@ wwv_flow_api.create_flow(
 ,p_substitution_string_01=>'APP_NAME'
 ,p_substitution_value_01=>'GitHowToForApex'
 ,p_last_updated_by=>'JSQCONTRACTTOHIRE@YAHOO.COM'
-,p_last_upd_yyyymmddhh24miss=>'20211222130708'
+,p_last_upd_yyyymmddhh24miss=>'20211222141113'
 ,p_file_prefix => nvl(wwv_flow_application_install.get_static_app_file_prefix,'')
 ,p_files_version=>3
 ,p_ui_type_name => null
@@ -13945,7 +13945,18 @@ wwv_flow_api.create_page(
 ,p_page_template_options=>'#DEFAULT#'
 ,p_protection_level=>'C'
 ,p_last_updated_by=>'JSQCONTRACTTOHIRE@YAHOO.COM'
-,p_last_upd_yyyymmddhh24miss=>'20211222130657'
+,p_last_upd_yyyymmddhh24miss=>'20211222141113'
+);
+wwv_flow_api.create_page_plug(
+ p_id=>wwv_flow_api.id(6132666961541422016)
+,p_plug_name=>'Home Screen Git Example'
+,p_region_template_options=>'#DEFAULT#:t-Region--scrollBody'
+,p_plug_template=>wwv_flow_api.id(24718188730955267200)
+,p_plug_display_sequence=>10
+,p_include_in_reg_disp_sel_yn=>'Y'
+,p_plug_query_options=>'DERIVED_REPORT_COLUMNS'
+,p_attribute_01=>'N'
+,p_attribute_02=>'HTML'
 );
 wwv_flow_api.create_page_plug(
  p_id=>wwv_flow_api.id(24718298481955267261)
@@ -13960,6 +13971,21 @@ wwv_flow_api.create_page_plug(
 ,p_attribute_01=>'N'
 ,p_attribute_02=>'HTML'
 ,p_attribute_03=>'Y'
+);
+wwv_flow_api.create_page_item(
+ p_id=>wwv_flow_api.id(6132667034666422017)
+,p_name=>'P1_NEW'
+,p_item_sequence=>10
+,p_item_plug_id=>wwv_flow_api.id(6132666961541422016)
+,p_prompt=>'Hello GitHub World'
+,p_display_as=>'NATIVE_TEXT_FIELD'
+,p_cSize=>30
+,p_field_template=>wwv_flow_api.id(24718258970771267231)
+,p_item_template_options=>'#DEFAULT#'
+,p_attribute_01=>'N'
+,p_attribute_02=>'N'
+,p_attribute_04=>'TEXT'
+,p_attribute_05=>'BOTH'
 );
 end;
 /
