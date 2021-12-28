@@ -7,7 +7,7 @@ Note: See file GitHub SQL File How to.docs for screen shots.
 
 
 
-Disclaimer: This is an example of how Git might be used to work with Oracle Apex/SQL files and this is not an official NOAA process and more of a high level overview of how to branch and merge you code.
+Disclaimer: This is an example of how Git might be used to work with Oracle Apex/SQL files and this is not an official NOAA process and more of a high level overview of how to branch and merge your code.
 
 Note: There are 3rd party apps and plug-ins that do a lot of the work for you – this example is working with sql files manually. 
 Have an oracle apex application ready (or a sql file from SQL Dev for example)– here is a very simple shell of a project that has been set up.  Export the application as a SQL file.
